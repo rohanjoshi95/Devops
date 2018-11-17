@@ -1,0 +1,71 @@
+ 
+1.  How do you view a text file with the ability to scroll through the pages of the file.
+--> 
+
+2.  How do you view the first 10 lines of the file?
+--> head -10 <filename>
+
+3.  How do you view the last 10 lines of the file?
+--> tail -10 <filename>
+
+4.  How do you see the last few lines of file as new data written to it in realtime.
+--> 
+
+1.  Write the first few lines of output of "ls -la" to the file "data.txt"
+--> ls -la | head -5 > page.txt
+
+2.  Write the last few line of output of "ls -la" to an existing file "data.txt" without overwriting the existing content in it.
+--> ls -la | tail -5 >> page.txt
+
+3.  From the data.txt file, extract last 3 columns
+--> 
+
+4.  Sort the content of the file alphabetically based on first character in the file
+--> sort <filename>
+
+5.  Sort the content of the file numerically
+--> sort -n <filename>
+
+6.  Print number of lines in the file.
+--> wc -l <filename>
+
+7.  Print number of words in the file.
+--> wc -w <filename>
+
+8.  Print number of character in the file.
+--> wc -m <filename>
+
+2.  return lines that matches a pattern of your choice.
+--> grep 'ABC' <filename>
+
+3.  return lines that does not matches the pattern of your choice.
+--> grep -v 'ABC' <filename>
+
+4.  Perform a recursive search on a pattern your choice.
+--> grep -w 'ABC' newdev.txt
+
+5.  Perform a case-insensitive search on a pattern of your choice.
+--> grep -i 'ABC' <filename>
+
+6.  Find the lines that matches a pattern of your choice, but display only the first 3 lines out of all the lines mathed.
+--> grep -i 'ABC' newdev.txt | head -3
+
+7.  Find out how many times a particular word appears in the file.
+--> grep -w 'ABC' newdev.txt | wc -w
+
+8.  Use plato_republic.txt file, and display all the line that starts with "Republic".
+--> grep '^Republic' plato_republic.txt
+
+9.  Use Plato_republic.txt file, and display all the lines that ends with "Republic".
+-->  grep 'Republic$' plato_republic.txt
+
+10. Use plato_republic.txt file, and display the number of lines that has word "republic".
+--> grep 'Republic' plato_republic.txt | wc -l
+
+11. Use plato_republic.txt file, and display all the lines that begins with either a or A or b or B
+--> grep 'a' 
+
+12. Use plato_republic.txt file, and display all the lines that does not begins with either a or A or b or B
+--> grep [a B b A]
+ 
+
