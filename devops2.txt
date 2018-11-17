@@ -1,15 +1,10 @@
- 
-1.  How do you view a text file with the ability to scroll through the pages of the file.
---> 
+
 
 2.  How do you view the first 10 lines of the file?
 --> head -10 <filename>
 
 3.  How do you view the last 10 lines of the file?
 --> tail -10 <filename>
-
-4.  How do you see the last few lines of file as new data written to it in realtime.
---> 
 
 1.  Write the first few lines of output of "ls -la" to the file "data.txt"
 --> ls -la | head -5 > page.txt
