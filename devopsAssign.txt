@@ -97,4 +97,52 @@ Answers-----
 --> cd
 
 30. Go up one directory
---> 
+--> cd ..
+
+31. Return to last directory
+--> cd -
+
+32. change the current directory to home(logged in user's) directory
+--> cd ~
+
+33. How to check all the command used from the prompt (Command History)
+--> history
+
+34. In which file the history of commands are stored in?
+--> .bash_history
+
+35. How many lines of history does the system keep and from where you can change it?
+--> hist control	
+
+37. Display all the commands entered so far, now, try to run a particular command from the history list without typing that command.
+--> plus the no of history	
+
+38. What are the different types of shell and where are they used and how do we use them?
+--> login shell and non login shell 
+	
+42. How we see all our env variables?
+--> env
+
+43. How we see all env variables in alphabical order?
+--> printenv | sort
+ 
+44. What Format does the env var and its values are stored?
+--> variable = value
+
+45. How do you create your own varible?
+--> Test="Rohan"
+
+52. List all entries with extension ".sh"
+--> ls *.sh
+
+63. What are the different ways of creating a File in linux System? Write an example of each and the difference between them.
+--> vim ,vi , and nano
+
+64. In how many ways we can delete the files from linux system? write an example of each and teh difference between them.
+--> rm, rmdir ,rm -r 
+
+65. Archiving files using linux command, write a command to archive set of files from linux commands.
+--> tar cf myfile.tar myfile.sh
+
+66. Extract the archived files from the above step.
+--> tar xf myfile.tar
