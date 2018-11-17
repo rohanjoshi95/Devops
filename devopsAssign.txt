@@ -1,9 +1,5 @@
 Answers-----
 
-1.  List the contents of a directory and their attributes
---> 
-
-
 2.  Long list the content with file, directory ownership, permissions,sizes, etc...
 --> ls -l
 	total 12150
